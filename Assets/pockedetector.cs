@@ -8,6 +8,7 @@ public class pockedetector : MonoBehaviour
         if (other.gameObject.CompareTag("Ball"))
         {
             GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            Destroy(other.gameObject)
 
             // Add the score to the player's score
             gameManager.AddScore(1);
